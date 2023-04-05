@@ -1,5 +1,4 @@
 ***Project title: Mysterio***<br>
-**Mysterio** is an online clothing shop. <br>
 
 **Home Page**
 ![](readmeImg/home.png)
