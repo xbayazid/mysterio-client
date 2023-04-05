@@ -9,7 +9,7 @@ const About = () => {
             <div className=''>
                 <img src={banner} alt="" />
             </div>
-            <div className="my-14 flex items-center">
+            <div className="my-14 lg:flex items-center">
                 <div className=''>
                     <p className='leading-10 font-black'>About Outfie</p>
                     <p className='w-3/4 text-gray-500'>Slowly she drifted to the southeast, rising higher and higher as the flames ateaway her wooden parts and diminished the weight upon her. Ascending to the roof of the building I watched her for hours until she was lost in the dim finally.</p>
@@ -24,20 +24,20 @@ const About = () => {
                     </div>
             </div>
             <div className='bg-pink-50 px-20 py-36'>
-                <div className='grid grid-cols-2'>
+                <div className='grid lg:grid-cols-2'>
                     <h1 className='text-4xl'>Free shipping</h1>
                     <p className='w-3/4'>We want you to be happy with your purchase. Therefore, shipping is on us and you can return your items up to 90 days.</p>
                 </div>
-                <div className='grid grid-cols-2 my-7'>
+                <div className='grid lg:grid-cols-2 my-7'>
                     <h1 className='text-4xl'>Express delivery</h1>
                     <p className='w-3/4'>Don’t feel like waiting? Our express delivery service ensures you receive your new items within 5 business days.</p>
                 </div>
-                <div className='grid grid-cols-2'>
+                <div className='grid lg:grid-cols-2'>
                     <h1 className='text-4xl'>New styles</h1>
-                    <p className='w-3/4'>We’re constantly designing new styles and collections. Come back soon to discover what’s new and pick your favourite</p>
+                    <p className='w-3/4 text-justify'>We’re constantly designing new styles and collections. Come back soon to discover what’s new and pick your favourite</p>
                 </div>
             </div>
-            <div className="my-14 bg-sky-100 p-16 text-center">
+            <div className="my-14 bg-sky-100 p-16 lg:text-center">
                 <h1 className='text-5xl mb-5'>Memeber Prices: up to 20% off select styles</h1>
                 <Link className='font-black' style={{borderBottom: "2px solid"}}>Learn More</Link>
             </div>

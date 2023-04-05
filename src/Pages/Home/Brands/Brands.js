@@ -8,7 +8,7 @@ import brandSix from '../../../assets/brand6.webp'
 
 const Brands = () => {
     return (
-        <div className='my-5 lg:container mx-auto'>
+        <div className='my-5 lg:container mx-auto hidden lg:block'>
             <div className='text-center'>
                 <h1 className='text-3xl'>Popular brands</h1>
             </div>

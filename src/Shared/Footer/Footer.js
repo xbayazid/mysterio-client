@@ -6,8 +6,8 @@ import paymentOne from '../../assets/paymet-1.avif'
 const Footer = () => {
     return (
         <div className='mx-5 mt-12'>
-            <div className='grid lg:grid-cols-4'>
-            <div className='text-sm'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
+            <div className='text-sm my-3 lg:my-0'>
                 <p className="uppercase leading-10 font-black">contact us</p>
                 <p className='font-black'>Add: <span className='text-gray-500'>4 Copley Place, 7th Floor, Boston, MA 6</span></p>
                 <p className='font-black leading-6'>Tell: <span className='text-gray-500'>866.453.4748</span></p>
@@ -29,7 +29,7 @@ const Footer = () => {
                 <p className='text-gray-600 cursor-pointer hover:text-sky-600'>Blazers & Vests</p>
                 <p className='text-gray-600 cursor-pointer hover:text-sky-600'>Shorts</p>
             </div>
-            <div className='text-sm'>
+            <div className='text-sm my-3 lg:my-0'>
                 <p className="uppercase leading-10 font-black">services</p>
                 <p className='text-gray-600 cursor-pointer hover:text-sky-600'>Sale</p>
                 <p className='text-gray-600 cursor-pointer hover:text-sky-600'>Quick Ship</p>

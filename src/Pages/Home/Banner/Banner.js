@@ -1,31 +1,53 @@
-import React from 'react';
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-fade";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+// import required modules
+import { Autoplay, Pagination, Navigation, EffectFade } from "swiper";
 
 const Banner = () => {
+    const images = [
+        {
+            id: 1,
+            img: "https://i.ibb.co/ySttHyT/Home-Season-426e966b-0252-443c-b88f-532d7cd2ba04.webp"
+        },
+        {
+            id: 2,
+            img: "https://i.ibb.co/rHm1D17/Home-Main-update2-880573a0-e874-4a70-9645-3872269f5c45.webp"
+        },
+        {
+            id: 3,
+            img: "https://i.ibb.co/WGWrdjd/two.webp"
+        }
+    ]
     return (
         <div>
-            <div className="carousel w-full">
-                <div id="slide1" className="carousel-item relative w-full">
-                    <img src="https://i.ibb.co/ySttHyT/Home-Season-426e966b-0252-443c-b88f-532d7cd2ba04.webp" alt='' className="w-full" />
-                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide2" className="btn btn-circle">❮</a>
-                        <a href="#slide2" className="btn btn-circle">❯</a>
-                    </div>
-                </div>
-                <div id="slide2" className="carousel-item relative w-full">
-                    <img src="https://i.ibb.co/WGWrdjd/two.webp" alt='' className="w-full" />
-                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide1" className="btn btn-circle">❮</a>
-                        <a href="#slide1" className="btn btn-circle">❯</a>
-                    </div>
-                </div>
-                {/* <div id="slide3" className="carousel-item relative w-full">
-                    <img src="https://i.ibb.co/1bq2Gsx/three.web" alt='' className="w-full" />
-                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide2" className="btn btn-circle">❮</a>
-                        <a href="#slide1" className="btn btn-circle">❯</a>
-                    </div>
-                </div> */}
-            </div>
+            <>
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        effect={"fade"}
+        autoplay={{
+          delay: 3500,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay, Pagination, EffectFade]}
+        className="mySwiper"
+      >
+        {
+            images.map(image => <SwiperSlide key={image.id}>
+                <img src={image.img} alt="" />
+            </SwiperSlide>)
+        }
+        
+      </Swiper>
+    </>
         </div>
     );
 };
