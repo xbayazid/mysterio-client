@@ -5,7 +5,6 @@ const NewArrival = () => {
     const videoRef = useRef(null);
 
     useEffect(() => {
-      // Start playing the video as soon as it's loaded
       videoRef.current.play();
     }, []);
     return (
