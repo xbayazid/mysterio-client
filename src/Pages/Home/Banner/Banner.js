@@ -17,12 +17,12 @@ const Banner = () => {
             id: 1,
             img: "https://i.ibb.co/ySttHyT/Home-Season-426e966b-0252-443c-b88f-532d7cd2ba04.webp"
         },
+        // {
+        //     id: 2,
+        //     img: "https://i.ibb.co/rHm1D17/Home-Main-update2-880573a0-e874-4a70-9645-3872269f5c45.webp"
+        // },
         {
             id: 2,
-            img: "https://i.ibb.co/rHm1D17/Home-Main-update2-880573a0-e874-4a70-9645-3872269f5c45.webp"
-        },
-        {
-            id: 3,
             img: "https://i.ibb.co/WGWrdjd/two.webp"
         }
     ]
