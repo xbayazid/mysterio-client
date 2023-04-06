@@ -2,11 +2,31 @@ import React from 'react';
 import LoadButton from '../../components/LoadButton/LoadButton';
 import { Link } from 'react-router-dom';
 import CollectionBtn from '../../components/Button/CollectionBtn/CollectionBtn';
+import ReactTypingEffect from 'react-typing-effect';
 
 const Men = () => {
     return (
         <div className='mx-7'>
-            <h1 className='text-5xl uppercase mt-7'>mens <span className='text-gray-400' style={{ borderBottom: "2px solid" }}>collection</span></h1>
+            <>
+                <ReactTypingEffect
+                    text={["mens Collection"]}
+                    cursorRenderer={cursor => <h1>{cursor}</h1>}
+                    displayTextRenderer={(text, i) => {
+                        return (
+                            <h1 className='text-5xl uppercase mt-7 text-gray-500' style={{ borderBottom: "2px solid" }}>
+                                {text.split('').map((char, i) => {
+                                    const key = `${i}`;
+                                    return (
+                                        <span
+                                            key={key}
+                                        >{char}</span>
+                                    );
+                                })}
+                            </h1>
+                        );
+                    }}
+                />
+            </>
             <div className='mb-10'>
                 <div class="px-0 md:p-10 md:px-0">
                     <div class="p-5 md:p-0 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5 items-start ">
@@ -23,8 +43,8 @@ const Men = () => {
                                 <h1 className='text-lg font-black'>Long sleeve T-shirt</h1>
                                 <div className='flex items-center justify-between mt-4'>
                                     <p className='text-red-400 font-semibold'>$250</p>
-                                    <Link>
-                                    <CollectionBtn/>
+                                    <Link to="/details">
+                                        <CollectionBtn />
                                     </Link>
                                 </div>
                             </div>
@@ -43,7 +63,7 @@ const Men = () => {
                                 <div className='flex items-center justify-between mt-4'>
                                     <p className='text-red-400 font-semibold'>$850</p>
                                     <Link>
-                                    <CollectionBtn/>
+                                        <CollectionBtn />
                                     </Link>
                                 </div>
                             </div>
@@ -62,7 +82,7 @@ const Men = () => {
                                 <div className='flex items-center justify-between mt-4'>
                                     <p className='text-red-400 font-semibold'>$129</p>
                                     <Link>
-                                    <CollectionBtn/>
+                                        <CollectionBtn />
                                     </Link>
                                 </div>
                             </div>
@@ -81,7 +101,7 @@ const Men = () => {
                                 <div className='flex items-center justify-between mt-4'>
                                     <p className='text-red-400 font-semibold'>$267</p>
                                     <Link>
-                                    <CollectionBtn/>
+                                        <CollectionBtn />
                                     </Link>
                                 </div>
                             </div>
@@ -100,7 +120,7 @@ const Men = () => {
                                 <div className='flex items-center justify-between mt-4'>
                                     <p className='text-red-400 font-semibold'>$250</p>
                                     <Link>
-                                    <CollectionBtn/>
+                                        <CollectionBtn />
                                     </Link>
                                 </div>
                             </div>
@@ -119,7 +139,7 @@ const Men = () => {
                                 <div className='flex items-center justify-between mt-4'>
                                     <p className='text-red-400 font-semibold'>$950</p>
                                     <Link>
-                                    <CollectionBtn/>
+                                        <CollectionBtn />
                                     </Link>
                                 </div>
                             </div>
@@ -138,7 +158,7 @@ const Men = () => {
                                 <div className='flex items-center justify-between mt-4'>
                                     <p className='text-red-400 font-semibold'>$669</p>
                                     <Link>
-                                    <CollectionBtn/>
+                                        <CollectionBtn />
                                     </Link>
                                 </div>
                             </div>
@@ -157,7 +177,7 @@ const Men = () => {
                                 <div className='flex items-center justify-between mt-4'>
                                     <p className='text-red-400 font-semibold'>$250</p>
                                     <Link>
-                                    <CollectionBtn/>
+                                        <CollectionBtn />
                                     </Link>
                                 </div>
                             </div>
