@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const CheckOut = () => {
     const [dropdown1, setDropdown1] = useState(false);
@@ -20,9 +21,9 @@ const CheckOut = () => {
                             <p className="text-3xl lg:text-4xl font-semibold leading-7 lg:leading-9 text-gray-800">Check out</p>
                         </div>
                         <div className="mt-2">
-                            <a href="javascript:void(0)" className="text-base leading-4 underline  hover:text-gray-800 text-gray-600">
-                                Back to my bag
-                            </a>
+                            <Link to="/men"   className="text-base leading-4 underline  hover:text-gray-800 text-gray-600">
+                                Back to my shop
+                            </Link>
                         </div>
                         <div className="mt-12">
                             <p className="text-xl font-semibold leading-5 text-gray-800">Shipping Details</p>
