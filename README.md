@@ -1,6 +1,11 @@
 ***Project title: Mysterio***<br>
 **[Live Site](https://mysterio-client.vercel.app/)**   <br>
 
+***Front-End Technology***
+1. React.js
+2. Tailwind.css
+3. React typing effect
+
 **Home Page**
 ![](readmeImg/home.png)
 
