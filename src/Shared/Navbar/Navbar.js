@@ -157,9 +157,11 @@ const Navbar = () => {
                                                 <p className="text-2xl leading-normal text-gray-800">Total</p>
                                                 <p className="text-2xl font-bold leading-normal text-right text-gray-800">$10,240</p>
                                             </div>
+                                            <Link to="/checkout">
                                             <button onClick={() => setShow(!show)} className="text-base leading-none w-full py-5 bg-gray-800 border-gray-800 border focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-white">
                                                 Checkout
                                             </button>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
