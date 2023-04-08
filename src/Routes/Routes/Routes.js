@@ -9,6 +9,9 @@ import Login from "../../Pages/Login/Login";
 import ProductDetails from "../../Pages/ProductDetails/ProductDetails";
 import CheckOut from "../../Pages/CheckOut/CheckOut";
 import SignUp from "../../Pages/SignUp/SignUp";
+import Payment from "../../Pages/Payment/Payment";
+import Dashboard from "../../Pages/Dashboard/Dashboard";
+import MyOrders from "../../Pages/Dashboard/MyOrders/MyOrders";
 
 const router = createBrowserRouter([
     {
@@ -50,6 +53,18 @@ const router = createBrowserRouter([
             {
                 path: '/checkout',
                 element: <CheckOut/>
+            },
+            {
+                path: '/payment',
+                element: <Payment/>
+            },
+            {
+                path: '/dashboard',
+                element: <Dashboard/>
+            },
+            {
+                path: '/myorder',
+                element: <MyOrders/>
             }
         ]
     }

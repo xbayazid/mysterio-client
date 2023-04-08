@@ -38,6 +38,10 @@ const SignUp = () => {
                         <hr className="w-full bg-gray-400  " />
                     </div>
                     <div>
+                        <lable className="text-sm font-medium leading-none text-gray-800">Full Name</lable>
+                        <input aria-label=""  type="email" className="bg-gray-200 border rounded focus:outline-none text-xs font-medium leading-none text-gray-800 py-3 w-full pl-3 mt-2" />
+                    </div>
+                    <div>
                         <lable className="text-sm font-medium leading-none text-gray-800">Email</lable>
                         <input aria-label="enter email adress" role="input" type="email" className="bg-gray-200 border rounded focus:outline-none text-xs font-medium leading-none text-gray-800 py-3 w-full pl-3 mt-2" />
                     </div>

@@ -9,7 +9,7 @@ const About = () => {
             <div className=''>
                 <img src={banner} alt="" />
             </div>
-            <div className="my-14 lg:flex items-center">
+            <div className="my-14 mx-5 lg:flex items-center">
                 <div className=''>
                     <p className='leading-10 font-black'>About Outfie</p>
                     <p className='w-3/4 text-gray-500'>Slowly she drifted to the southeast, rising higher and higher as the flames ateaway her wooden parts and diminished the weight upon her. Ascending to the roof of the building I watched her for hours until she was lost in the dim finally.</p>

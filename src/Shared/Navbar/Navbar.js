@@ -29,13 +29,11 @@ const Navbar = () => {
             <li><Link to="/women">womens</Link></li>
             <li><Link to="/blog">blog</Link></li>
             <li><Link to="/about">About us</Link></li>
+            {/* <li><Link to="/dashboard">Dashboard</Link></li> */}
           </ul>
         </div>
         <div className="navbar-end">
           <div className='flex items-center gap-1'>
-            <Link  onClick={() => setShow(!show)} className='text-2xl font-semibold' to="/cart">
-
-              </Link>
               <button onClick={() => setShow(!show)} className='text-2xl font-semibold' >
               <HiShoppingBag />
                     </button>

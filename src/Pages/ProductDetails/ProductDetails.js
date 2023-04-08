@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const ProductDetails = () => {
     const [color, setColor] = useState("White");
@@ -88,6 +89,9 @@ const ProductDetails = () => {
 
                             <div className="flex flex-col w-full space-y-4 mt-10">
                                 <button className="border border-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 md:w-96 w-full hover:bg-black text-base font-medium leading-4 bg-gray-800 py-4 text-white">Add to Bag</button>
+                                <Link to="/checkout">
+                                <button className="border border-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 md:w-96 w-full hover:bg-black text-base font-medium leading-4 bg-gray-800 py-4 text-white">Buy Now</button>
+                                </Link>
                             </div>
                         </div>
                         <button onClick={() => setMenu(false)} aria-label="show Menu" className="absolute top-4 right-4  md:top-6 md:right-6 focus:outline-none focus:ring-2  focus:ring-gray-800">
